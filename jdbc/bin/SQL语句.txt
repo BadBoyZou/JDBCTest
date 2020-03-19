@@ -1,0 +1,14 @@
+CREATE DATABASE IF NOT EXISTS jdbctest DEFAULT CHARACTER SET 'UTF8';
+
+use jdbctest;
+create table user(
+uid int primary key auto_increment,
+username varchar(20),
+password varchar(20),
+name varchar(20)
+)ENGINE=INNODB CHARSET=UTF8;
+
+insert into user values (null,'aaa','123','张三'),
+(null,'bbb','123','李四'),
+(null,'ccc','123','王五'),
+(null,'ddd','123','张武');
